@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const userRouter = require("./Routes/user.router");
-const meetingRouter = require("./Routes/meeting.router");
-// const diaryRouter = require("./Routes/meeting.router");
-const accountRouter = require("./Routes/account.router");
-const authMiddleware = require('./middleware/middleware');
+const userRouter = require("./src/Server/Routes/user.router");
+const meetingRouter = require("./src/Server/Routes/meeting.router");
+// const diaryRouter = require("./src/Server/Routes/meeting.router");
+const accountRouter = require("./src/Server/Routes/account.router");
+const authMiddleware = require('./src/Server/middleware/middleware/middleware');
 const port = 
 process.env.port ||
  3000;
