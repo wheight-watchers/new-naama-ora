@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="design.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body style="text-align: center;">
+    <h1>NEW MEETING</h1>
+    <form name="meet" id="meetForm">
+        <div class="input-group input-group-lg">
+            <span class="input-group-text" id="inputGroup-sizing-lg">DATE:</span>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg" name="date" id="dateInput">
+        </div>
+        <div id="usersWeightsForMeet">
+        </div>
+        <button class="btn btn-outline-warning" id="submitFilter" onclick="newMeeting()">SAVE</button>
+    </form>
+    <script src="Meet.js"></script>
+</body>
+
+</html>

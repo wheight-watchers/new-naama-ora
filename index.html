@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="src/design.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body style="text-align: center;" onload="CreateArrayOfAllProductsName()">
+    <h1 id="h1Login" style="text-align: center;">Hi, Enter Your Email and Password for getting started</h1>
+    <form id="pasandemail">
+        <lable class="labelLogin">email</lable></br><input class="loginInput" type="text" id="mailInput">
+        </br>
+        <lable class="labelLogin">password</lable></br><input class="loginInput" type="password" id="passwordInput">
+        </br>
+        <br>
+        <button type="button" id="buttonLogin" onclick="logIn()" class="btn btn-outline-warning"> login</button>
+    </form>
+    <button style="display: none;" onclick="directToProducts()"  id="buttonEdit" id="buttonProduct-search">Products Nutrition</button>
+    <script src="src/logIn.js"></script>
+    <script src="src/userFunctions.js"></script>
+    <script src="src/Products.js"></script>
+</body>
+
+</html>
