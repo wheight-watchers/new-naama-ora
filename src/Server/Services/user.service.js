@@ -9,12 +9,12 @@ const uuid = require('uuid');
 const uuIdv4 = uuid.v4;
 
 const getData = async () =>
-  fs.readFile("../file.json").then((data) => JSON.parse(data));
-const updateData = async (data) =>
-  fs.writeFile("../file.json", JSON.stringify(data));
 
+fs.readFile("src/file.json").then((data) => JSON.parse(data));
+const updateData = async (data) =>
+fs.writeFile("src/file.json", JSON.stringify(data));
 const addUser = async (user) => {
-  if (!user.firstName || !user.lastName || !user.password || !user.email) {
+  if (!user.firstName || !user.lastName || !user.id || !user.email) {
     throw new Error("user must include username ,email and password");
   }
   const id = uuIdv4();
@@ -24,7 +24,7 @@ const addUser = async (user) => {
   // users_count += 1;
   const users = (await getData()) || [];
   const exists = users.find(
-    (_user) => _user.email === user.email || _user.password === user.password
+    (_user) => _user.email === user.email || _user.id === user.id
   );
   if (exists) {
     throw new Error("details already exist");
