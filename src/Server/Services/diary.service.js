@@ -1,6 +1,6 @@
 const fs = require('fs')
-const getData = async () => fs.readFile('../file.json').then(data => JSON.parse(data.users));
-const updateData = async (data) => fs.writeFile('../file.json', JSON.stringify(data));
+const getData = async () => fs.readFile('src/file.json').then(data => JSON.parse(data.users));
+const updateData = async (data) => fs.writeFile('src/file.json', JSON.stringify(data));
 
 async function getDiary(userId) {
    const data = await getData();
