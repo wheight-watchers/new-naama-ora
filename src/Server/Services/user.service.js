@@ -5,11 +5,9 @@ const fs = require("fs/promises");
 const uuid = require("uuid");
 const uuIdv4 = uuid.v4;
 
-const getData = async () =>
-  fs.readFile("src/file.json").then((data) => JSON.parse(data));
+const getData = async () => fs.readFile("src/file.json").then((data) => JSON.parse(data));
 
-const updateData = async (data) =>
-  fs.writeFile("src/file.json", JSON.stringify(data));
+const updateData = async (data) => fs.writeFile("src/file.json", JSON.stringify(data));
 
 const addUser = async (user) => {
   if (!user.firstName || !user.lastName || !user.id || !user.email) {
@@ -24,8 +22,8 @@ const addUser = async (user) => {
   if (exists) {
     throw new Error("details already exist");
   }
-  // data=[...data,user]
-  data.users.push(user);
+ // data.users = [...data.users, user]
+  data.users.push(user)
   await updateData(data);
   return data;
 };
@@ -37,7 +35,7 @@ const getUsersList = async () => {
 const getUser = async (id) => {
   const data = await getData();
   const users = data.users;
-  const _user = await users.find((user) => user.id === id);
+  const _user = await users.find((user) => user.id ===  parseInt(id));
   return _user;
   // return await myData.users.find((user)=>user.id===id);
 };
