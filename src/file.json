@@ -9,6 +9,7 @@
   "users": [
     {
       "id": 1,
+      "password": 1,
       "firstName": "Naama",
       "lastName": "Frank",
       "email": "N@gmail.com",
@@ -22,510 +23,183 @@
       "Weights": {
         "startWeight": 77,
         "meetings": [
-          {
-            "date": "12/04/2020",
-            "weight": 75
-          },
-          {
-            "date": "18/04/2020",
-            "weight": 75
-          }
+          { "date": "12/04/2020", "weight": 75 },
+          { "date": "18/04/2020", "weight": 75 }
         ]
       },
       "diary": [
         {
           "date": "12/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "13/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "14/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "5.7.2022",
           "summary": [
-            {
-              "Breakfast": [
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "Lunch": [
-                ""
-              ]
-            },
-            {
-              "Dinner": [
-                ""
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                ""
-              ]
-            }
+            { "Breakfast": ["", "", ""] },
+            { "Lunch": [""] },
+            { "Dinner": [""] },
+            { "IntermediateSnack": [""] }
           ]
         }
       ]
     },
     {
       "id": 2,
+      "password": 2,
       "firstName": "Shimon",
       "lastName": "Cohen",
       "email": "sc@gmail.com",
-      "address": {
-        "city": "Tel-aviv",
-        "street": "arlozerov",
-        "building": 5
-      },
+      "address": { "city": "Tel-aviv", "street": "arlozerov", "building": 5 },
       "height": 1.7,
       "age": 33,
       "Weights": {
         "startWeight": 77,
         "meetings": [
-          {
-            "date": "12/04/2020",
-            "weight": 75
-          },
-          {
-            "date": "18/04/2020",
-            "weight": 75
-          }
+          { "date": "12/04/2020", "weight": 75 },
+          { "date": "18/04/2020", "weight": 75 }
         ]
       },
       "diary": [
         {
           "date": "12/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "13/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "14/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         }
       ]
     },
     {
       "id": 3,
+      "password": 3,
       "firstName": "Levy",
       "lastName": "Cohen",
       "email": "lc@gmail.com",
-      "address": {
-        "city": "Tel-aviv",
-        "street": "yafo",
-        "building": "5"
-      },
+      "address": { "city": "Tel-aviv", "street": "yafo", "building": "5" },
       "height": "1.7",
       "age": "33",
       "Weights": {
         "startWeight": 60,
         "meetings": [
-          {
-            "date": "12/04/2020",
-            "weight": 59
-          },
-          {
-            "date": "18/04/2020",
-            "weight": 62
-          }
+          { "date": "12/04/2020", "weight": 59 },
+          { "date": "18/04/2020", "weight": 62 }
         ]
       },
       "diary": [
         {
           "date": "12/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "13/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "14/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         }
       ]
     },
     {
       "id": 4,
+      "password": 4,
       "firstName": "Yehuda",
       "lastName": "Cohen",
       "email": "yc@gmail.com",
-      "address": {
-        "city": "Ramat-Gan",
-        "street": "Harohe",
-        "building": 5
-      },
+      "address": { "city": "Ramat-Gan", "street": "Harohe", "building": 5 },
       "height": 1.7,
       "age": 33,
       "Weights": {
         "startWeight": 85,
         "meetings": [
-          {
-            "date": "12/04/2020",
-            "weight": 85
-          },
-          {
-            "date": "18/04/2020",
-            "weight": 83
-          }
+          { "date": "12/04/2020", "weight": 85 },
+          { "date": "18/04/2020", "weight": 83 }
         ]
       },
       "diary": [
         {
           "date": "12/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "13/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         },
         {
           "date": "14/04/2020",
           "summary": [
-            {
-              "Breakfast": [
-                "roll",
-                "chocolate-milk"
-              ]
-            },
-            {
-              "Lunch": [
-                "rice",
-                "meet",
-                "beans"
-              ]
-            },
-            {
-              "Dinner": [
-                "baget",
-                "salad",
-                "omlete"
-              ]
-            },
-            {
-              "IntermediateSnack": [
-                "coffee",
-                "chocolate",
-                "cookies"
-              ]
-            }
+            { "Breakfast": ["roll", "chocolate-milk"] },
+            { "Lunch": ["rice", "meet", "beans"] },
+            { "Dinner": ["baget", "salad", "omlete"] },
+            { "IntermediateSnack": ["coffee", "chocolate", "cookies"] }
           ]
         }
       ]

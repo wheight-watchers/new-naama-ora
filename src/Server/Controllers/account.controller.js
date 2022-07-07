@@ -6,7 +6,7 @@ module.exports.login = async (req, res, next) => {
       req.params.email,
       req.params.password
     );
-    res.send(user);
+    res.status(200).send(user);
   } catch (err) {
     next(err);
   }
