@@ -21,7 +21,8 @@ const addUser = async (user) => {
   if (exists) {
     throw new Error("details already exist");
   }
-  data = [...data, user]
+ // data.users = [...data.users, user]
+  data.users.push(user)
   await updateData(data);
   return data;
 };
