@@ -24,7 +24,7 @@ const addUser = async (user) => {
  // data=[...data,user]
  data.users.push(user);
   await updateData(data);
-  return user;
+  return data;
 };
 const getUsersList = async () => {
   const data = await getData();
@@ -39,15 +39,16 @@ const getUser = async (id) => {
   // return await myData.users.find((user)=>user.id===id);
 };
 const deleteUser = async (id) => {
-  const data = await getData();
+  let data = await getData();
   let users =data.users;
   const index = await users.findIndex((user) => user.id === parseInt(id));
   if(index===-1){
     throw new Error(`user with id ${id} not found`);
   }
   users.splice(index, 1);
-  await updateData(users);
-  return users
+  Object.assign(data.users, users);
+  await updateData(data);
+  return data
   // return myData.users.filter((user)=>user.id!==id);
 };
 const updateUser = async (id, newUser) => {
