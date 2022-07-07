@@ -6,9 +6,9 @@ const fs = require("fs");
 // myData = JSON.parse(dataFromFile);
 
 const getData = async () =>
-  fs.readFile("../file.json").then((data) => JSON.parse(data.users));
+  fs.readFile("src/file.json").then((data) => JSON.parse(data.users));
 const updateData = async (data) =>
-  fs.writeFile("../file.json", JSON.stringify(data));
+  fs.writeFile("src/file.json", JSON.stringify(data));
 
 const login = async (email, password) => {
   const users = await getData();

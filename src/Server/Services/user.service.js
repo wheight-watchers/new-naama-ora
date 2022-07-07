@@ -42,8 +42,8 @@ const getUsersList = async () => {
   // return await myData.users;
 };
 const getUser = async (id) => {
-  const users = await getData();
-  const _user = await users.find((user) => user.id === id);
+  const data = await getData();
+  const _user = await data.users.find((user) => user.id === id);
   return _user;
   // return await myData.users.find((user)=>user.id===id);
 };
