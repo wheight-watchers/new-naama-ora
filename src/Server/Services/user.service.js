@@ -9,9 +9,9 @@ const uuid = require('uuid');
 const uuIdv4 = uuid.v4;
 
 const getData = async () =>
-  fs.readFile("../file.json").then((data) => JSON.parse(data));
+  fs.readFile("src/file.json").then((data) => JSON.parse(data));
 const updateData = async (data) =>
-  fs.writeFile("../file.json", JSON.stringify(data));
+  fs.writeFile("src/file.json", JSON.stringify(data));
 
 const addUser = async (user) => {
   if (!user.firstName || !user.lastName || !user.password || !user.email) {
