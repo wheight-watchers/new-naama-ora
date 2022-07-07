@@ -5,33 +5,26 @@ const fs = require("fs/promises");
 const uuid = require('uuid');
 const uuIdv4 = uuid.v4;
 
-const getData = async () =>
-  fs.readFile("src/file.json").then((data) => JSON.parse(data));
-const updateData = async (data) =>
-  fs.writeFile("src/file.json", JSON.stringify(data));
+const getData = async () =>fs.readFile("src/file.json").then((data) => JSON.parse(data));
+
+const updateData = async (data) =>fs.writeFile("src/file.json", JSON.stringify(data));
 
 const addUser = async (user) => {
-  if (!user.firstName || !user.lastName || !user.password || !user.email) {
+  if (!user.firstName || !user.lastName || !user.id || !user.email) {
     throw new Error("user must include username ,email and password");
   }
   const id = uuIdv4();
   user.id = id;
-
-  // user.id = users_count + 1;
-  // users_count += 1;
-  const users = (await getData()) || [];
-  const exists = users.find(
-    (_user) => _user.email === user.email || _user.password === user.password
+  const data = (await getData()) || [];
+  const exists = await data.users.find( (_user) => _user.email === user.email || _user.id === user.id
   );
   if (exists) {
     throw new Error("details already exist");
   }
-  users.push(user);
-  await updateData(users);
+ // data=[...data,user]
+ data.users.push(user);
+  await updateData(data);
   return user;
-  // const user=new UserModel(name, email, password);
-  // myData=[...myData,user]
-  // return myData;
 };
 const getUsersList = async () => {
   const data = await getData();

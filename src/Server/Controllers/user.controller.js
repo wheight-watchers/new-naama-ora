@@ -32,7 +32,7 @@ module.exports.addUser= async (req, res, next) => {
     //add a new user
     try{
         const users=await UserService.addUser(req.body);
-        res.status(200).send(user);
+        res.status(200).send(users);
     }
     catch(err){
         next(err)

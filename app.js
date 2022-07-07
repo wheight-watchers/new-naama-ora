@@ -3,7 +3,6 @@ const app = express();
 const cors = require("cors");
 const userRouter = require("./src/Server/Routes/user.router");
 const meetingRouter = require("./src/Server/Routes/meeting.router");
-// const diaryRouter = require("./src/Server/Routes/meeting.router");
 const accountRouter = require("./src/Server/Routes/account.router");
 const authMiddleware = require('./src/Server/middleware/middleware');
 const port = 
