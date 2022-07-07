@@ -36,22 +36,34 @@ const getUsersList = async () => {
 };
 const getUser = async (id) => {
   const data = await getData();
-  const _user = await data.users.find((user) => user.id === id);
+  const users =data.users;
+  const _user = await users.find((user) => user.id === id);
   return _user;
   // return await myData.users.find((user)=>user.id===id);
 };
 const deleteUser = async (id) => {
-  const users = await getData();
+
+  // let usersArr;
+  // await fs.readFile('src/dataFile.json')
+  //     .then(data => JSON.parse(data))
+  //     .then(data => usersArr = data)
+  //     .then(usersArr => usersArr.users.indexOf(user => user.id === id))
+  //     .then(index => usersArr.users.splice(index, 1))
+  // return await fs.writeFile('src/dataFile.json', JSON.stringify(usersArr));
+  const data = await getData();
+  const users =data.users;
   const index = await users.findIndex((user) => user.id === id);
   if(index===-1){
     throw new Error(`user with id ${id} not found`);
   }
   users.splice(index, 1);
   await updateData(users);
+  return users
   // return myData.users.filter((user)=>user.id!==id);
 };
 const updateUser = async (id, newUser) => {
-  const users = await getData();
+  const data = await getData();
+  const users =data.users;
   const _user = await users.find((user) => user.id === id);
   Object.assign(_user, newUser);
   await updateData(users);
