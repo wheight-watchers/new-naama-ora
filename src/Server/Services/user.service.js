@@ -1,7 +1,4 @@
-// const { post } = require("../Controllers/user.controller");
-// const UserModel = require("../models/user.model");
 const fs = require("fs/promises");
-// const { json } = require("body-parser");
 // const dataFromFile=fs.readFileSync('../file.json');
 // myData=JSON.parse(dataFromFile);
 // let users_count = 4;
@@ -26,7 +23,7 @@ const addUser = async (user) => {
   }
   data = [...data, user]
   await updateData(data);
-  return user;
+  return data;
 };
 const getUsersList = async () => {
   const data = await getData();
@@ -41,29 +38,22 @@ const getUser = async (id) => {
   // return await myData.users.find((user)=>user.id===id);
 };
 const deleteUser = async (id) => {
-
-  // let usersArr;
-  // await fs.readFile('src/dataFile.json')
-  //     .then(data => JSON.parse(data))
-  //     .then(data => usersArr = data)
-  //     .then(usersArr => usersArr.users.indexOf(user => user.id === id))
-  //     .then(index => usersArr.users.splice(index, 1))
-  // return await fs.writeFile('src/dataFile.json', JSON.stringify(usersArr));
-  const data = await getData();
-  const users = data.users;
-  const index = await users.findIndex((user) => user.id === id);
-  if (index === -1) {
+  let data = await getData();
+  let users =data.users;
+  const index = await users.findIndex((user) => user.id === parseInt(id));
+  if(index===-1){
     throw new Error(`user with id ${id} not found`);
   }
   users.splice(index, 1);
-  await updateData(users);
-  return users
+  Object.assign(data.users, users);
+  await updateData(data);
+  return data
   // return myData.users.filter((user)=>user.id!==id);
 };
 const updateUser = async (id, newUser) => {
   const data = await getData();
-  const users = data.users;
-  const _user = await users.find((user) => user.id === id);
+  let users =data.users;
+  const _user = await users.find((user) => user.id === parseInt(id));
   Object.assign(_user, newUser);
   await updateData(users);
   return _user;
